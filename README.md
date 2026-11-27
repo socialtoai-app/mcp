@@ -8,7 +8,7 @@
 [English](./README.md) · [简体中文](./README.zh-CN.md)
 
 **One MCP server & REST API for 18 global + Chinese social media platforms and 2 ad libraries.**
-Let ChatGPT, Claude, Claude Code, Cursor, Windsurf, Cline, Codex, Dify, Coze, n8n, OpenClaw, and your scripts read live public posts, comments, profiles, trending feeds, watermark-free media, and video transcripts — **pay per call, failed calls cost 0**.
+Let ChatGPT, Claude, Claude Code, Cursor, Antigravity, Windsurf, Cline, Codex, Dify, Coze, n8n, OpenClaw, and your scripts read live public posts, comments, profiles, trending feeds, watermark-free media, and video transcripts — **pay per call, failed calls cost 0**.
 
 - **100 Free Credits on Sign-up** — email OTP or Google sign-in at [socialtoai.app/sign-in/](https://socialtoai.app/sign-in/), no credit card required, credits never expire.
 - **Alipay & International Card** — prepaid USD credit packs via Waffo Checkout (no overseas credit card required).
@@ -33,10 +33,10 @@ Let ChatGPT, Claude, Claude Code, Cursor, Windsurf, Cline, Codex, Dify, Coze, n8
 ### Option A — OAuth 2.0 (ChatGPT, Claude, Clients with MCP OAuth)
 Add `https://socialtoai.app/mcp` as a remote MCP server. The server exposes full OAuth 2.0 discovery (`/.well-known/oauth-authorization-server`), dynamic client registration (`/oauth/register`), and 1-hour access tokens with automatic `refresh_token` rotation.
 
-### Option B — API Key (Cursor, Windsurf, Cline, Claude Code, Codex, OpenClaw, Cherry Studio)
+### Option B — API Key (Cursor, Antigravity, Windsurf, Cline, Claude Code, Codex, OpenClaw, Cherry Studio)
 1. Sign in at [socialtoai.app/sign-in/](https://socialtoai.app/sign-in/) to claim **100 free credits**.
 2. Create an API key (`stai_live_...`) in [Console → API Keys](https://socialtoai.app/console/keys/).
-3. Paste into your client's MCP configuration:
+3. Paste into your client's MCP configuration (for Google Antigravity `~/.gemini/config/mcp_config.json`, use `"serverUrl"` instead of `"url"`):
 
 ```json
 {
@@ -69,7 +69,7 @@ If your client only supports local `stdio` MCP servers, run the zero-dependency 
 ```
 
 Client-specific guides:
-[ChatGPT](https://socialtoai.app/connect/chatgpt/) · [Claude](https://socialtoai.app/connect/claude/) · [Claude Code](https://socialtoai.app/connect/claude-code/) · [Cursor](https://socialtoai.app/connect/cursor/) · [Windsurf](https://socialtoai.app/connect/windsurf/) · [Cline](https://socialtoai.app/connect/cline/) · [Codex](https://socialtoai.app/connect/codex/) · [Dify](https://socialtoai.app/connect/dify/) · [Coze](https://socialtoai.app/connect/coze/) · [n8n](https://socialtoai.app/connect/n8n/) · [OpenClaw](https://socialtoai.app/connect/openclaw/) · [Cherry Studio](https://socialtoai.app/connect/cherry-studio/)
+[ChatGPT](https://socialtoai.app/connect/chatgpt/) · [Claude](https://socialtoai.app/connect/claude/) · [Claude Code](https://socialtoai.app/connect/claude-code/) · [Cursor](https://socialtoai.app/connect/cursor/) · [Antigravity](https://socialtoai.app/connect/antigravity/) · [Windsurf](https://socialtoai.app/connect/windsurf/) · [Cline](https://socialtoai.app/connect/cline/) · [Codex](https://socialtoai.app/connect/codex/) · [Dify](https://socialtoai.app/connect/dify/) · [Coze](https://socialtoai.app/connect/coze/) · [n8n](https://socialtoai.app/connect/n8n/) · [OpenClaw](https://socialtoai.app/connect/openclaw/) · [Cherry Studio](https://socialtoai.app/connect/cherry-studio/)
 
 ---
 

@@ -8,7 +8,7 @@
 [English](./README.md) · [简体中文](./README.zh-CN.md)
 
 **一个 MCP 地址 + 统一 REST API，打通国内外 18 个社媒平台与 2 大广告库。**
-让 ChatGPT、Claude、Claude Code、Cursor、Windsurf、Cline、Codex、Dify、扣子（Coze）、n8n、OpenClaw 与你的程序直接读取小红书、抖音、B 站、微博、知乎、快手、公众号、视频号、TikTok、Instagram、X、Reddit、YouTube、Facebook、Pinterest 等平台的公开帖子、评论、账号数据、无水印媒体和视频逐字稿——**按次计费，调用失败不扣费**。
+让 ChatGPT、Claude、Claude Code、Cursor、Antigravity、Windsurf、Cline、Codex、Dify、扣子（Coze）、n8n、OpenClaw 与你的程序直接读取小红书、抖音、B 站、微博、知乎、快手、公众号、视频号、TikTok、Instagram、X、Reddit、YouTube、Facebook、Pinterest 等平台的公开帖子、评论、账号数据、无水印媒体和视频逐字稿——**按次计费，调用失败不扣费**。
 
 - **注册即送 100 免费积分**：在 [socialtoai.app/zh/sign-in/](https://socialtoai.app/zh/sign-in/) 用邮箱验证码或 Google 登录即可领取，免绑卡，积分永久有效。
 - **支持支付宝与银行卡**：Waffo 托管收银，**无需海外信用卡**，无月费订阅。
@@ -28,10 +28,10 @@
 
 **远程 MCP 地址（Streamable HTTP）：** `https://socialtoai.app/mcp`
 
-### 方式一：API Key 配置（Cursor / Windsurf / Cline / Claude Code / Codex / OpenClaw / Cherry Studio）
+### 方式一：API Key 配置（Cursor / Antigravity / Windsurf / Cline / Claude Code / Codex / OpenClaw / Cherry Studio）
 1. 登录 [socialtoai.app/zh/sign-in/](https://socialtoai.app/zh/sign-in/) 领取 **100 免费积分**；
 2. 在控制台 [API Keys](https://socialtoai.app/console/keys/) 创建一把 `stai_live_...` 密钥；
-3. 粘贴到客户端 MCP 配置文件：
+3. 粘贴到客户端 MCP 配置文件（Google Antigravity 的 `~/.gemini/config/mcp_config.json` 中请将 `"url"` 写为 `"serverUrl"`）：
 
 ```json
 {
@@ -67,7 +67,7 @@
 ```
 
 各客户端详细接入教程：
-[ChatGPT](https://socialtoai.app/zh/connect/chatgpt/) · [Claude](https://socialtoai.app/zh/connect/claude/) · [Cursor](https://socialtoai.app/zh/connect/cursor/) · [Windsurf](https://socialtoai.app/zh/connect/windsurf/) · [Cline](https://socialtoai.app/zh/connect/cline/) · [Dify](https://socialtoai.app/zh/connect/dify/) · [扣子 Coze](https://socialtoai.app/zh/connect/coze/) · [n8n](https://socialtoai.app/zh/connect/n8n/) · [OpenClaw](https://socialtoai.app/zh/connect/openclaw/) · [Cherry Studio](https://socialtoai.app/zh/connect/cherry-studio/)
+[ChatGPT](https://socialtoai.app/zh/connect/chatgpt/) · [Claude](https://socialtoai.app/zh/connect/claude/) · [Cursor](https://socialtoai.app/zh/connect/cursor/) · [Antigravity](https://socialtoai.app/zh/connect/antigravity/) · [Windsurf](https://socialtoai.app/zh/connect/windsurf/) · [Cline](https://socialtoai.app/zh/connect/cline/) · [Codex](https://socialtoai.app/zh/connect/codex/) · [Dify](https://socialtoai.app/zh/connect/dify/) · [扣子 Coze](https://socialtoai.app/zh/connect/coze/) · [n8n](https://socialtoai.app/zh/connect/n8n/) · [OpenClaw](https://socialtoai.app/zh/connect/openclaw/) · [Cherry Studio](https://socialtoai.app/zh/connect/cherry-studio/)
 
 ---
 
