@@ -1,0 +1,54 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "app.socialtoai/socialtoai-app",
+  "title": "SocialToAI.app",
+  "description": "Social media data & transcripts for 18 global/China platforms + ad libraries. 100 free credits.",
+  "websiteUrl": "https://socialtoai.app/",
+  "repository": {
+    "url": "https://github.com/socialtoai-app/mcp",
+    "source": "github"
+  },
+  "version": "1.2.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://socialtoai.app/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "OAuth 2.0 Bearer token (auto-issued via /.well-known/oauth-authorization-server with 1h refresh_token rotation) or API key (Bearer stai_live_...) from https://socialtoai.app/console/.",
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "auth": ["oauth2_pkce_refresh", "bearer_api_key", "x_api_key"],
+      "payment_methods": ["alipay", "card"],
+      "free_signup_credits": 100,
+      "live_capabilities": 242,
+      "tools": [
+        "search",
+        "trending",
+        "detail",
+        "comments",
+        "user_profile",
+        "user_posts",
+        "find",
+        "call",
+        "capabilities",
+        "account",
+        "brand_buzz",
+        "comment_insights",
+        "find_creators",
+        "account_watch",
+        "creator_card",
+        "batch_stats",
+        "research",
+        "watch",
+        "watch_news"
+      ]
+    }
+  }
+}

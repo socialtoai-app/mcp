@@ -1,0 +1,1319 @@
+[
+  {
+    "name": "search",
+    "title": "Search Social Platform",
+    "description": "Search a platform for posts or accounts by keyword. Platform prices are listed by capabilities. Failed calls cost 0. A platform without a configured data source answers provider_unconfigured.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "platform": {
+          "enum": [
+            "tiktok",
+            "instagram",
+            "x",
+            "reddit",
+            "youtube",
+            "facebook",
+            "linkedin",
+            "threads",
+            "telegram",
+            "pinterest",
+            "xiaohongshu",
+            "douyin",
+            "weibo",
+            "wechat",
+            "bilibili",
+            "zhihu",
+            "kuaishou",
+            "wechat_channels"
+          ]
+        },
+        "query": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "sort": {
+          "type": "string"
+        },
+        "board": {
+          "type": "string"
+        },
+        "region": {
+          "type": "string"
+        },
+        "include": {
+          "type": "string"
+        },
+        "reply_of": {
+          "type": "string"
+        },
+        "since": {
+          "type": "string"
+        },
+        "until": {
+          "type": "string"
+        },
+        "published_within": {
+          "type": "string"
+        },
+        "limit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100
+        },
+        "cursor": {
+          "type": "string"
+        },
+        "handle": {
+          "type": "string"
+        },
+        "idempotency_key": {
+          "type": "string",
+          "description": "A unique request ID. Reuse it to retry without charging twice."
+        },
+        "max_cost_credits": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "platform",
+        "idempotency_key"
+      ]
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "idempotentHint": false,
+      "destructiveHint": false,
+      "openWorldHint": true
+    }
+  },
+  {
+    "name": "trending",
+    "title": "Platform Trending Feed",
+    "description": "Read a platform trending list. Platform prices are listed by capabilities. Failed calls cost 0. A platform without a configured data source answers provider_unconfigured.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "platform": {
+          "enum": [
+            "tiktok",
+            "instagram",
+            "x",
+            "reddit",
+            "youtube",
+            "facebook",
+            "linkedin",
+            "threads",
+            "telegram",
+            "pinterest",
+            "xiaohongshu",
+            "douyin",
+            "weibo",
+            "wechat",
+            "bilibili",
+            "zhihu",
+            "kuaishou",
+            "wechat_channels"
+          ]
+        },
+        "query": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "sort": {
+          "type": "string"
+        },
+        "board": {
+          "type": "string"
+        },
+        "region": {
+          "type": "string"
+        },
+        "include": {
+          "type": "string"
+        },
+        "reply_of": {
+          "type": "string"
+        },
+        "since": {
+          "type": "string"
+        },
+        "until": {
+          "type": "string"
+        },
+        "published_within": {
+          "type": "string"
+        },
+        "limit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100
+        },
+        "cursor": {
+          "type": "string"
+        },
+        "handle": {
+          "type": "string"
+        },
+        "idempotency_key": {
+          "type": "string",
+          "description": "A unique request ID. Reuse it to retry without charging twice."
+        },
+        "max_cost_credits": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "platform",
+        "idempotency_key"
+      ]
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "idempotentHint": false,
+      "destructiveHint": false,
+      "openWorldHint": true
+    }
+  },
+  {
+    "name": "detail",
+    "title": "Post or Video Detail",
+    "description": "Get one post or video by id or link. Platform prices are listed by capabilities. Failed calls cost 0. A platform without a configured data source answers provider_unconfigured.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "platform": {
+          "enum": [
+            "tiktok",
+            "instagram",
+            "x",
+            "reddit",
+            "youtube",
+            "facebook",
+            "linkedin",
+            "threads",
+            "telegram",
+            "pinterest",
+            "xiaohongshu",
+            "douyin",
+            "weibo",
+            "wechat",
+            "bilibili",
+            "zhihu",
+            "kuaishou",
+            "wechat_channels"
+          ]
+        },
+        "query": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "sort": {
+          "type": "string"
+        },
+        "board": {
+          "type": "string"
+        },
+        "region": {
+          "type": "string"
+        },
+        "include": {
+          "type": "string"
+        },
+        "reply_of": {
+          "type": "string"
+        },
+        "since": {
+          "type": "string"
+        },
+        "until": {
+          "type": "string"
+        },
+        "published_within": {
+          "type": "string"
+        },
+        "limit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100
+        },
+        "cursor": {
+          "type": "string"
+        },
+        "handle": {
+          "type": "string"
+        },
+        "idempotency_key": {
+          "type": "string",
+          "description": "A unique request ID. Reuse it to retry without charging twice."
+        },
+        "max_cost_credits": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "platform",
+        "idempotency_key"
+      ]
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "idempotentHint": false,
+      "destructiveHint": false,
+      "openWorldHint": true
+    }
+  },
+  {
+    "name": "comments",
+    "title": "Post Public Comments",
+    "description": "Read the anonymous public comments under one post. Platform prices are listed by capabilities. Failed calls cost 0. A platform without a configured data source answers provider_unconfigured.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "platform": {
+          "enum": [
+            "tiktok",
+            "instagram",
+            "x",
+            "reddit",
+            "youtube",
+            "facebook",
+            "linkedin",
+            "threads",
+            "telegram",
+            "pinterest",
+            "xiaohongshu",
+            "douyin",
+            "weibo",
+            "wechat",
+            "bilibili",
+            "zhihu",
+            "kuaishou",
+            "wechat_channels"
+          ]
+        },
+        "query": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "sort": {
+          "type": "string"
+        },
+        "board": {
+          "type": "string"
+        },
+        "region": {
+          "type": "string"
+        },
+        "include": {
+          "type": "string"
+        },
+        "reply_of": {
+          "type": "string"
+        },
+        "since": {
+          "type": "string"
+        },
+        "until": {
+          "type": "string"
+        },
+        "published_within": {
+          "type": "string"
+        },
+        "limit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100
+        },
+        "cursor": {
+          "type": "string"
+        },
+        "handle": {
+          "type": "string"
+        },
+        "idempotency_key": {
+          "type": "string",
+          "description": "A unique request ID. Reuse it to retry without charging twice."
+        },
+        "max_cost_credits": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "platform",
+        "idempotency_key"
+      ]
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "idempotentHint": false,
+      "destructiveHint": false,
+      "openWorldHint": true
+    }
+  },
+  {
+    "name": "user_profile",
+    "title": "Public Account Profile",
+    "description": "Get one public account profile. Platform prices are listed by capabilities. Failed calls cost 0. A platform without a configured data source answers provider_unconfigured.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "platform": {
+          "enum": [
+            "tiktok",
+            "instagram",
+            "x",
+            "reddit",
+            "youtube",
+            "facebook",
+            "linkedin",
+            "threads",
+            "telegram",
+            "pinterest",
+            "xiaohongshu",
+            "douyin",
+            "weibo",
+            "wechat",
+            "bilibili",
+            "zhihu",
+            "kuaishou",
+            "wechat_channels"
+          ]
+        },
+        "query": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "sort": {
+          "type": "string"
+        },
+        "board": {
+          "type": "string"
+        },
+        "region": {
+          "type": "string"
+        },
+        "include": {
+          "type": "string"
+        },
+        "reply_of": {
+          "type": "string"
+        },
+        "since": {
+          "type": "string"
+        },
+        "until": {
+          "type": "string"
+        },
+        "published_within": {
+          "type": "string"
+        },
+        "limit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100
+        },
+        "cursor": {
+          "type": "string"
+        },
+        "handle": {
+          "type": "string"
+        },
+        "idempotency_key": {
+          "type": "string",
+          "description": "A unique request ID. Reuse it to retry without charging twice."
+        },
+        "max_cost_credits": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "platform",
+        "idempotency_key"
+      ]
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "idempotentHint": false,
+      "destructiveHint": false,
+      "openWorldHint": true
+    }
+  },
+  {
+    "name": "user_posts",
+    "title": "Account Recent Posts",
+    "description": "List what one account has published. Platform prices are listed by capabilities. Failed calls cost 0. A platform without a configured data source answers provider_unconfigured.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "platform": {
+          "enum": [
+            "tiktok",
+            "instagram",
+            "x",
+            "reddit",
+            "youtube",
+            "facebook",
+            "linkedin",
+            "threads",
+            "telegram",
+            "pinterest",
+            "xiaohongshu",
+            "douyin",
+            "weibo",
+            "wechat",
+            "bilibili",
+            "zhihu",
+            "kuaishou",
+            "wechat_channels"
+          ]
+        },
+        "query": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "sort": {
+          "type": "string"
+        },
+        "board": {
+          "type": "string"
+        },
+        "region": {
+          "type": "string"
+        },
+        "include": {
+          "type": "string"
+        },
+        "reply_of": {
+          "type": "string"
+        },
+        "since": {
+          "type": "string"
+        },
+        "until": {
+          "type": "string"
+        },
+        "published_within": {
+          "type": "string"
+        },
+        "limit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100
+        },
+        "cursor": {
+          "type": "string"
+        },
+        "handle": {
+          "type": "string"
+        },
+        "idempotency_key": {
+          "type": "string",
+          "description": "A unique request ID. Reuse it to retry without charging twice."
+        },
+        "max_cost_credits": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "platform",
+        "idempotency_key"
+      ]
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "idempotentHint": false,
+      "destructiveHint": false,
+      "openWorldHint": true
+    }
+  },
+  {
+    "name": "find",
+    "title": "Find Platform Call",
+    "description": "Find the right call by what it does, in English or Chinese. Free.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "idempotentHint": true,
+      "destructiveHint": false,
+      "openWorldHint": false
+    }
+  },
+  {
+    "name": "call",
+    "title": "Platform Specific Op",
+    "description": "Call one platform-specific op (platform.name) that the six actions do not cover. An op without a configured data source answers provider_unconfigured. Failed calls cost 0.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "op": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "query": {
+          "type": "string"
+        },
+        "keyword": {
+          "type": "string"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "brand": {
+          "type": "string"
+        },
+        "since": {
+          "type": "string"
+        },
+        "until": {
+          "type": "string"
+        },
+        "handle": {
+          "type": "string"
+        },
+        "idempotency_key": {
+          "type": "string",
+          "description": "A unique request ID. Reuse it to retry without charging twice."
+        },
+        "max_cost_credits": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "op",
+        "idempotency_key"
+      ]
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "idempotentHint": false,
+      "destructiveHint": false,
+      "openWorldHint": true
+    }
+  },
+  {
+    "name": "watch",
+    "title": "Manage Scheduled Watch",
+    "description": "Preview a daily or weekly schedule with action=preview. Use action=confirm with the returned token after approval. Other actions: list, pause, resume, delete, rotate_feed, revoke_feed.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "action": {
+          "type": "string"
+        },
+        "target_action": {
+          "type": "string"
+        },
+        "token": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "op": {
+          "type": "string"
+        },
+        "tool": {
+          "type": "string"
+        },
+        "input": {
+          "type": "object"
+        },
+        "args": {
+          "type": "object"
+        },
+        "frequency": {
+          "enum": [
+            "daily",
+            "weekly"
+          ]
+        },
+        "every": {
+          "enum": [
+            "daily",
+            "weekly"
+          ]
+        },
+        "time": {
+          "type": "string"
+        },
+        "timezone": {
+          "type": "string"
+        },
+        "weekday": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 6
+        },
+        "max_credits_per_run": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "delivery": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string"
+            }
+          }
+        },
+        "webhook_url": {
+          "type": "string"
+        },
+        "idempotency_key": {
+          "type": "string",
+          "description": "A unique request ID. Reuse it to retry without charging twice."
+        }
+      },
+      "required": []
+    },
+    "annotations": {
+      "readOnlyHint": false,
+      "idempotentHint": false,
+      "destructiveHint": false,
+      "openWorldHint": true
+    }
+  },
+  {
+    "name": "watch_news",
+    "title": "Read Watch Updates",
+    "description": "What your watches found that you have not been shown yet, newest first. Free. Pass id for one watch.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      }
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "idempotentHint": true,
+      "destructiveHint": false,
+      "openWorldHint": false
+    }
+  },
+  {
+    "name": "brand_buzz",
+    "title": "Brand Buzz Analysis",
+    "description": "What people say about a brand on up to five platforms: posts, engagement, sentiment, and sampled comments on medium/large tiers. Quotes its price first.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "brand": {
+          "type": "string"
+        },
+        "platforms": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 5,
+          "items": {
+            "enum": [
+              "tiktok",
+              "instagram",
+              "x",
+              "reddit",
+              "youtube",
+              "facebook",
+              "linkedin",
+              "threads",
+              "telegram",
+              "pinterest",
+              "xiaohongshu",
+              "douyin",
+              "weibo",
+              "wechat",
+              "bilibili",
+              "zhihu",
+              "kuaishou",
+              "wechat_channels"
+            ]
+          }
+        },
+        "scale": {
+          "enum": [
+            "small",
+            "medium",
+            "large"
+          ]
+        },
+        "handle": {
+          "type": "string"
+        },
+        "confirm": {
+          "type": "boolean"
+        },
+        "max_cost_credits": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "idempotency_key": {
+          "type": "string",
+          "description": "A unique request ID. Reuse it to retry without charging twice."
+        }
+      },
+      "required": [
+        "brand",
+        "platforms"
+      ]
+    },
+    "annotations": {
+      "readOnlyHint": false,
+      "idempotentHint": false,
+      "destructiveHint": false,
+      "openWorldHint": true
+    }
+  },
+  {
+    "name": "find_creators",
+    "title": "Find Creators",
+    "description": "Creators in a niche on one platform with tiered depth (small=20, medium=50, large=100 candidates, profile and recent-post enrichment). Quotes its price first.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "platform": {
+          "enum": [
+            "tiktok",
+            "instagram",
+            "x",
+            "reddit",
+            "youtube",
+            "facebook",
+            "linkedin",
+            "threads",
+            "telegram",
+            "pinterest",
+            "xiaohongshu",
+            "douyin",
+            "weibo",
+            "wechat",
+            "bilibili",
+            "zhihu",
+            "kuaishou",
+            "wechat_channels"
+          ]
+        },
+        "niche": {
+          "type": "string"
+        },
+        "scale": {
+          "enum": [
+            "small",
+            "medium",
+            "large"
+          ]
+        },
+        "handle": {
+          "type": "string"
+        },
+        "confirm": {
+          "type": "boolean"
+        },
+        "max_cost_credits": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "idempotency_key": {
+          "type": "string",
+          "description": "A unique request ID. Reuse it to retry without charging twice."
+        }
+      },
+      "required": [
+        "platform",
+        "niche"
+      ]
+    },
+    "annotations": {
+      "readOnlyHint": false,
+      "idempotentHint": false,
+      "destructiveHint": false,
+      "openWorldHint": true
+    }
+  },
+  {
+    "name": "creator_card",
+    "title": "Creator Profile Card",
+    "description": "One creator across up to five platforms: pass explicit accounts OR one profile url to auto-discover other platforms. Medium scale adds comments & KOL commercial data.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "accounts": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "properties": {
+              "platform": {
+                "enum": [
+                  "tiktok",
+                  "instagram",
+                  "x",
+                  "reddit",
+                  "youtube",
+                  "facebook",
+                  "linkedin",
+                  "threads",
+                  "telegram",
+                  "pinterest",
+                  "xiaohongshu",
+                  "douyin",
+                  "weibo",
+                  "wechat",
+                  "bilibili",
+                  "zhihu",
+                  "kuaishou",
+                  "wechat_channels"
+                ]
+              },
+              "username": {
+                "type": "string"
+              },
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "platform"
+            ]
+          }
+        },
+        "url": {
+          "type": "string"
+        },
+        "discover_platforms": {
+          "type": "array",
+          "maxItems": 4,
+          "items": {
+            "enum": [
+              "tiktok",
+              "instagram",
+              "x",
+              "reddit",
+              "youtube",
+              "facebook",
+              "linkedin",
+              "threads",
+              "telegram",
+              "pinterest",
+              "xiaohongshu",
+              "douyin",
+              "weibo",
+              "wechat",
+              "bilibili",
+              "zhihu",
+              "kuaishou",
+              "wechat_channels"
+            ]
+          }
+        },
+        "scale": {
+          "enum": [
+            "small",
+            "medium"
+          ]
+        },
+        "handle": {
+          "type": "string"
+        },
+        "confirm": {
+          "type": "boolean"
+        },
+        "max_cost_credits": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "idempotency_key": {
+          "type": "string",
+          "description": "A unique request ID. Reuse it to retry without charging twice."
+        }
+      },
+      "required": []
+    },
+    "annotations": {
+      "readOnlyHint": false,
+      "idempotentHint": false,
+      "destructiveHint": false,
+      "openWorldHint": true
+    }
+  },
+  {
+    "name": "batch_stats",
+    "title": "Batch Link Stats",
+    "description": "Current numbers of up to 2,000 post or account links, and which links no longer work. No AI analysis. Quotes its price first.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "links": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 2000,
+          "items": {
+            "type": "string"
+          }
+        },
+        "urls": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 2000,
+          "items": {
+            "type": "string"
+          }
+        },
+        "handle": {
+          "type": "string"
+        },
+        "confirm": {
+          "type": "boolean"
+        },
+        "max_cost_credits": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "idempotency_key": {
+          "type": "string",
+          "description": "A unique request ID. Reuse it to retry without charging twice."
+        }
+      },
+      "anyOf": [
+        {
+          "required": [
+            "urls"
+          ]
+        },
+        {
+          "required": [
+            "links"
+          ]
+        },
+        {
+          "required": [
+            "handle"
+          ]
+        }
+      ]
+    },
+    "annotations": {
+      "readOnlyHint": false,
+      "idempotentHint": false,
+      "destructiveHint": false,
+      "openWorldHint": true
+    }
+  },
+  {
+    "name": "comment_insights",
+    "title": "Comment Insights Analysis",
+    "description": "Summarize public comments on up to five posts across supported platforms with tiered depth (small=200, medium=1,000, large=3,000 comments). Quotes each distinct post by platform.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "targets": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 5,
+          "items": {
+            "type": "string"
+          }
+        },
+        "focus": {
+          "type": "string",
+          "description": "Optional topic to match in comments"
+        },
+        "scale": {
+          "enum": [
+            "small",
+            "medium",
+            "large"
+          ]
+        },
+        "handle": {
+          "type": "string"
+        },
+        "confirm": {
+          "type": "boolean"
+        },
+        "max_cost_credits": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "idempotency_key": {
+          "type": "string",
+          "description": "A unique request ID. Reuse it to retry without charging twice."
+        }
+      },
+      "required": [
+        "targets"
+      ]
+    },
+    "annotations": {
+      "readOnlyHint": false,
+      "idempotentHint": false,
+      "destructiveHint": false,
+      "openWorldHint": true
+    }
+  },
+  {
+    "name": "account_watch",
+    "title": "Account Watch Report",
+    "description": "Compare recent posts with the same account baseline across supported platforms (small=first page, medium=~60 posts, large=~60 posts + breakout comment sampling).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "accounts": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 3,
+          "items": {
+            "type": "string"
+          }
+        },
+        "window": {
+          "enum": [
+            "7d",
+            "30d"
+          ]
+        },
+        "scale": {
+          "enum": [
+            "small",
+            "medium",
+            "large"
+          ]
+        },
+        "handle": {
+          "type": "string"
+        },
+        "confirm": {
+          "type": "boolean"
+        },
+        "max_cost_credits": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "idempotency_key": {
+          "type": "string",
+          "description": "A unique request ID. Reuse it to retry without charging twice."
+        }
+      },
+      "required": [
+        "accounts"
+      ]
+    },
+    "annotations": {
+      "readOnlyHint": false,
+      "idempotentHint": false,
+      "destructiveHint": false,
+      "openWorldHint": true
+    }
+  },
+  {
+    "name": "research",
+    "title": "Viral Content Finder",
+    "description": "Find promising posts by keyword on a supported platform and compare candidates with authors baselines (small=1 page/2 authors, medium=3 pages/10 authors, large=5 pages/30 authors).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "tool": {
+          "const": "viral_finder"
+        },
+        "inputs": {
+          "type": "object",
+          "properties": {
+            "platform": {
+              "enum": [
+                "tiktok",
+                "instagram",
+                "x",
+                "reddit",
+                "youtube",
+                "facebook",
+                "linkedin",
+                "threads",
+                "telegram",
+                "pinterest",
+                "xiaohongshu",
+                "douyin",
+                "weibo",
+                "wechat",
+                "bilibili",
+                "zhihu",
+                "kuaishou",
+                "wechat_channels"
+              ]
+            },
+            "query": {
+              "type": "string"
+            },
+            "window": {
+              "enum": [
+                "7d",
+                "30d"
+              ]
+            },
+            "scale": {
+              "enum": [
+                "small",
+                "medium",
+                "large"
+              ]
+            }
+          },
+          "required": [
+            "query"
+          ]
+        },
+        "handle": {
+          "type": "string"
+        },
+        "confirm": {
+          "type": "boolean"
+        },
+        "max_cost_credits": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "idempotency_key": {
+          "type": "string",
+          "description": "A unique request ID. Reuse it to retry without charging twice."
+        }
+      },
+      "required": [
+        "tool",
+        "inputs"
+      ]
+    },
+    "annotations": {
+      "readOnlyHint": false,
+      "idempotentHint": false,
+      "destructiveHint": false,
+      "openWorldHint": true
+    }
+  },
+  {
+    "name": "account",
+    "title": "Account Credit Balance",
+    "description": "Check your socialtoai.app credit balance for free.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "idempotentHint": true,
+      "destructiveHint": false,
+      "openWorldHint": false
+    }
+  },
+  {
+    "name": "capabilities",
+    "title": "Platform Capabilities & Prices",
+    "description": "List the available platforms, tools and prices for free.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "idempotentHint": true,
+      "destructiveHint": false,
+      "openWorldHint": false
+    }
+  }
+]
