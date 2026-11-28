@@ -5,6 +5,8 @@
 [![Capabilities](https://img.shields.io/badge/Live%20Endpoints-242%2B-16a34a?style=flat-square)](https://socialtoai.app/v1/capabilities)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](./LICENSE)
 
+[![socialtoai-app/mcp MCP server](https://glama.ai/mcp/servers/socialtoai-app/mcp/badges/score.svg)](https://glama.ai/mcp/servers/socialtoai-app/mcp)
+
 [English](./README.md) · [简体中文](./README.zh-CN.md)
 
 **One MCP server & REST API for 18 global + Chinese social media platforms and 2 ad libraries.**
